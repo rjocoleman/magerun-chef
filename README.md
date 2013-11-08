@@ -1,8 +1,25 @@
 # n98-magerun Chef Cookbook
 
-A Chef cookbook to install and configure [n98-magerun.phar](https://github.com/netz98/n98-magerun) - a CLI for Magento.
+A Chef cookbook to install [n98-magerun.phar](https://github.com/netz98/n98-magerun) - a CLI for Magento.
 
-Experimental support for `n98-magerun.yaml` configuration is included via attributes, check `attributes/default.rb`.
+
+# Usage
+
+`n98-magerun::default` installs n98-magerun, e.g. place `include_recipe n98-magerun::default` in your recipe.
+n98-magerun is installed prior to compilation so that it *could* be used in later recipes. 
+
+
+# Attributes
+
+`node['n98-magerun']['install_dir']` - path to install to (default `/usr/local/bin`)
+`node['n98-magerun']['install_file']` - name of installed binary (default `n98-magerun.phar`)
+`node['n98-magerun']['url']` - url to get binary from (default `https://raw.github.com/netz98/n98-magerun/master/n98-magerun.phar`)
+`node['n98-magerun']['unstable']` - Specify whether to update to unstable version (using self-update) (default `false`)
+
+
+# Recipes
+
+`n98-magerun::default` - Install n98-magerun.
 
 
 ### Vagrant
