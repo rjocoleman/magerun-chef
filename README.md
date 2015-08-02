@@ -11,10 +11,10 @@ n98-magerun is installed prior to compilation so that it *could* be used in late
 
 # Attributes
 
-`node['n98-magerun']['install_dir']` - path to install to (default `/usr/local/bin`)
-`node['n98-magerun']['install_file']` - name of installed binary (default `n98-magerun.phar`)
-`node['n98-magerun']['url']` - url to get binary from (default `https://raw.github.com/netz98/n98-magerun/master/n98-magerun.phar`)
-`node['n98-magerun']['unstable']` - Specify whether to update to unstable version (using self-update) (default `false`)
+- `node['n98-magerun']['install_dir']` - path to install to (default `/usr/local/bin`)
+- `node['n98-magerun']['install_file']` - name of installed binary (default `n98-magerun.phar`)
+- `node['n98-magerun']['url']` - url to get binary from (default `https://raw.github.com/netz98/n98-magerun/master/n98-magerun.phar`)
+- `node['n98-magerun']['unstable']` - Specify whether to update to unstable version (using self-update) (default `false`)
 
 
 # Recipes
